@@ -6,6 +6,8 @@ Interactive badminton analytics using the [ShuttleSet](https://github.com/wywyWa
 
 ![Court heatmap](docs/screenshots/shot-placement.png)
 
+Screenshots: [Rally replay](docs/screenshots/rally-microscope.png) · [Shot selection](docs/screenshots/shot-selection.png) · [Shot sequence](docs/screenshots/shot-sequence.png) · [Scouting insights](docs/screenshots/scouting-insights.png)
+
 ## What it does
 
 - **Shot placement:** Explore where recorded shots go using a court heatmap and player comparison.
