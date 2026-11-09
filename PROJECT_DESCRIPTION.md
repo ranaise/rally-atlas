@@ -48,7 +48,9 @@ React, TypeScript, Vite, D3, visx and Radix UI. The static build serves local fo
 
 ## Prototype and GitHub links
 
-The public prototype and source URLs are pending publication. Use the verified public URLs in the submission email after publishing.
+Prototype: https://ranaise.github.io/rally-atlas/
+
+Source code: https://github.com/ranaise/rally-atlas
 
 ## Data attribution
 
