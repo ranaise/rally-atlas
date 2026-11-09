@@ -39,4 +39,12 @@ React, TypeScript, Vite, D3, visx and Radix UI. Data processing uses Python. The
 
 See [data sources and methods](DATA_SOURCES.md) and the [project description](PROJECT_DESCRIPTION.md). The dataset comes from [ShuttleSet](https://arxiv.org/abs/2306.04948), with separate license and attribution notes under `public/data/`.
 
-**Rally Atlas Team**, Telkom University.
+## Team
+
+- Farha Amirah Hasibuan
+- Azzahra Indah
+- Rafa'na'ilah Septia
+- Tisee Tisee
+- Kayla Ulfiyah Haurani
+
+Data Visualization, Telkom University.
