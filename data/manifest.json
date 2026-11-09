@@ -1,0 +1,115 @@
+{
+  "revision": "45517f7d4cb936b03f3eabf939cc7959d39226fe",
+  "quality": {
+    "source_rows": 7277,
+    "classified_strokes": 6961,
+    "flagged_or_unclassified_slots": 286,
+    "unknown_winner_rallies": 3,
+    "all_flagged_rallies": 29,
+    "all_flagged_rows": 29,
+    "missing_landing": 1,
+    "duplicate_rows": 1
+  },
+  "sources": [
+    {
+      "path": "ShuttleSet/set/match.csv",
+      "sha256": "e0a07f6f3dead61fdef27be15acf78e9298d4913bc4718b6fc7d0c9c55ebf6ac"
+    },
+    {
+      "path": "ShuttleSet/set/homography.csv",
+      "sha256": "dd529642da81963f6c2d9a59da55ad8be6d4779ef92cd79ca6910e87f2eeaf1e"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "2ff939aee5c1dbce2051c009933dc0ca17f75e75b26c844b73780f2498b33164"
+    },
+    {
+      "path": "ShuttleSet/set/CHOU_Tien_Chen_Jonatan_CHRISTIE_Indonesia_Open_2019_Quarter-finals/set1.csv",
+      "sha256": "06d4749d1356a4441c05302286bdc24804e609651c58852bb6b9348013835877"
+    },
+    {
+      "path": "ShuttleSet/set/CHOU_Tien_Chen_Jonatan_CHRISTIE_Indonesia_Open_2019_Quarter-finals/set2.csv",
+      "sha256": "539f632795a977e3fe46f89e076fed987a0715f47544e916ad19655e55982274"
+    },
+    {
+      "path": "ShuttleSet/set/CHOU_Tien_Chen_Jonatan_CHRISTIE_Indonesia_Open_2019_Quarter-finals/set3.csv",
+      "sha256": "a52925376082549878c0e469f6d9385a7c351c166611b11e8058b23b9517969c"
+    },
+    {
+      "path": "ShuttleSet/set/Anders_ANTONSEN_Jonatan_CHRISTIE Indonesia_Masters_2020_QuarterFinals/set1.csv",
+      "sha256": "1bfb0c65007d3d976f4407801a1240fd6ebdbfe19072708861d151cd9081a38e"
+    },
+    {
+      "path": "ShuttleSet/set/Anders_ANTONSEN_Jonatan_CHRISTIE Indonesia_Masters_2020_QuarterFinals/set2.csv",
+      "sha256": "ba150b04632777cbdcd249876fd36617c30f3810e96bdc75f4bce30a3e021203"
+    },
+    {
+      "path": "ShuttleSet/set/Anders_ANTONSEN_Jonatan_CHRISTIE Indonesia_Masters_2020_QuarterFinals/set3.csv",
+      "sha256": "b5d738f873fbd12881c3848cfcbd5e6f35dc932719bdfd9b6c3ca8927aa052c9"
+    },
+    {
+      "path": "ShuttleSet/set/Anthony_Sinisuka_GINTING_Anders_ANTONSEN_Indonesia_Masters_2020_Final/set1.csv",
+      "sha256": "aae7737186ad94164dc89d04c0800886a82eb071831e0f17b14e45c7e2e8d673"
+    },
+    {
+      "path": "ShuttleSet/set/Anthony_Sinisuka_GINTING_Anders_ANTONSEN_Indonesia_Masters_2020_Final/set2.csv",
+      "sha256": "762bc271aeab3c13c0314fd739a8baacb727a56c0453f9d3a91926f81b10f732"
+    },
+    {
+      "path": "ShuttleSet/set/Anthony_Sinisuka_GINTING_Anders_ANTONSEN_Indonesia_Masters_2020_Final/set3.csv",
+      "sha256": "a58df8f74fc9d55949e67fea39d0256d3b7f9eaab59f1b0e18047d8ef3c7cfb4"
+    },
+    {
+      "path": "ShuttleSet/set/Anthony_Sinisuka_GINTING_Viktor_AXELSEN _Indonesia_Masters_2020_SemiFinals/set1.csv",
+      "sha256": "0386e3c2b0e8f2932cdfc38e2098f7c97df3032fa9e197d39472a110b3e6659e"
+    },
+    {
+      "path": "ShuttleSet/set/Anthony_Sinisuka_GINTING_Viktor_AXELSEN _Indonesia_Masters_2020_SemiFinals/set2.csv",
+      "sha256": "d63991e4323585a9e4f77e4103221c34820100e31fc3710c54c9fe31859e88a1"
+    },
+    {
+      "path": "ShuttleSet/set/Anthony_Sinisuka_Ginting_Rasmus_Gemke_YONEX_Thailand_Open_2021_QuarterFinals/set1.csv",
+      "sha256": "527acb031fbc853ea01e0188ab6f215b103ab9681369c98bafd8cfc51dcab7de"
+    },
+    {
+      "path": "ShuttleSet/set/Anthony_Sinisuka_Ginting_Rasmus_Gemke_YONEX_Thailand_Open_2021_QuarterFinals/set2.csv",
+      "sha256": "ff1d19ff1ce9b830371071a43b46d68d3929feb20919bb235ff41ae45632b616"
+    },
+    {
+      "path": "ShuttleSet/set/Anthony_Sinisuka_Ginting_Rasmus_Gemke_YONEX_Thailand_Open_2021_QuarterFinals/set3.csv",
+      "sha256": "c3cffbb538dc478e4107757b18c881a6447c854a5ea9b7033b294a7e82ab805c"
+    },
+    {
+      "path": "ShuttleSet/set/Viktor_Axelsen_Jonatan_Christie_YONEX_Thailand_Open_2021_QuarterFinals/set1.csv",
+      "sha256": "f9e8f9f1d648bed632c22546789f598719b74fe1b1e5ab2091ee54faf91b30a3"
+    },
+    {
+      "path": "ShuttleSet/set/Viktor_Axelsen_Jonatan_Christie_YONEX_Thailand_Open_2021_QuarterFinals/set2.csv",
+      "sha256": "ba299d9eaea777a7a7043a9ecc6fd96caf75ce9194278f6daabf85d95f78c0c1"
+    },
+    {
+      "path": "ShuttleSet/set/Viktor_Axelsen_Anthony_Sinisuka_Ginting_YONEX_Thailand_Open_2021_SemiFinals/set1.csv",
+      "sha256": "c711e699bf84e5fb412adc5e4547ffed62141e83f4fa68a6b098ccd60b01ffec"
+    },
+    {
+      "path": "ShuttleSet/set/Viktor_Axelsen_Anthony_Sinisuka_Ginting_YONEX_Thailand_Open_2021_SemiFinals/set2.csv",
+      "sha256": "64cc19d935007516c4b04f056059babdd77e24a1dff860bc306cbc0df8843845"
+    },
+    {
+      "path": "ShuttleSet/set/Viktor_Axelsen_Anthony_Sinisuka_Ginting_YONEX_Thailand_Open_2021_SemiFinals/set3.csv",
+      "sha256": "843c42ae75e4d1ecc2d20cda420463399c8d89de8a3c6b42fccb048ff7d4640a"
+    },
+    {
+      "path": "ShuttleSet/set/Anthony_Sinisuka_Ginting_Lee_Zii_Jia_HSBC_BWF_WORLD_TOUR_FINALS_2020_QuarterFinals/set1.csv",
+      "sha256": "0b23987d2ee55a25e0db57db8048add6689bfb624e66b69400ae9d8d08e1ec94"
+    },
+    {
+      "path": "ShuttleSet/set/Anthony_Sinisuka_Ginting_Lee_Zii_Jia_HSBC_BWF_WORLD_TOUR_FINALS_2020_QuarterFinals/set2.csv",
+      "sha256": "c3896db5d1ba074a58fe07977ecf33f4a8d0ece546f12c2948a20731a5a1aa95"
+    },
+    {
+      "path": "ShuttleSet/set/Anthony_Sinisuka_Ginting_Lee_Zii_Jia_HSBC_BWF_WORLD_TOUR_FINALS_2020_QuarterFinals/set3.csv",
+      "sha256": "d2230c6a1aeed059d0e2d437662a8d19061e7b74ad125fa4254374af8b475981"
+    }
+  ]
+}
