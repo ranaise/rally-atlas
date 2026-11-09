@@ -1,58 +1,58 @@
-# Rally Atlas
+# Rally Atlas — Interactive Badminton Analytics
 
-## Team and academic affiliation
+**Project:** AQX Sports Analytics Data Bowl 4.0 / Data Visualization Midterm  
+**Institution:** Telkom University, Indonesia
 
-Rally Atlas Team, Telkom University, Indonesia. Prepared for the AQX Sports Analytics Data Bowl 4.0 and the Data Visualization midterm.
+## Team members
 
-## Problem statement
+- Farha Amirah Hasibuan
+- Azzahra Indah
+- Rafa'na'ilah Septia
+- Tisee Tisee
+- Kayla Ulfiyah Haurani
 
-A badminton scoreline records who won a point, but coaches and players preparing for a match also need to know which shots recur, where the shuttle is played, and how the exchanges develop.
+## Project overview
 
-## Project objective
+Rally Atlas is an interactive web application for exploring shot placement, rally sequences, and player tendencies in professional badminton singles. It turns stroke-level match records into court visualizations and statistical comparisons that are easier to explore than match scores alone.
 
-Use recorded shot patterns to support match preparation and player scouting. The prototype helps users identify patterns worth reviewing in specific rallies.
+## Problem and objective
 
-## Dataset and coverage
+A match score tells us who won, but not which shots were played, where the shuttle was directed, or how rallies developed. Rally Atlas helps coaches, players, and analysts examine these patterns and identify specific exchanges worth reviewing before a match.
 
-The prototype covers eight selected professional men's singles matches featuring Anthony Sinisuka Ginting or Jonatan Christie, played from July 2019 to January 2021. It includes 22 sets, 713 replayable rallies and 6,961 classified strokes. The placement map uses 6,726 in-court destinations.
+## Features
 
-## Data preparation
+- **Shot placement:** An interactive singles-court density map with 96 equal-area cells, zone summaries, individual shot locations, and player comparisons.
+- **Rally replay:** A step-by-step reconstruction of annotated strokes, player positions, destinations, and rally outcomes.
+- **Tactical patterns:** Player shot-share comparisons, rally-length distributions, stroke-position and next-shot patterns, and final-shot outcomes.
+- **Scouting insights:** Filter-responsive observations that point users toward relevant charts and rallies.
 
-A Python pipeline uses pinned ShuttleSet CSVs, validates rally and stroke keys, and projects camera coordinates onto a common court using the published match calibrations. Unresolved stroke slots remain in replay. One replayable rally has no classified stroke, so the unfiltered length histogram has 712 eligible rallies.
+Users can filter by match, player, set, and shot type. Court comparisons share a color scale so the two selected players can be evaluated consistently.
 
-## Visualization methods
+## Dataset and methods
 
-The density map divides the singles court into 96 cells of about 0.72 m² each. Color shows each cell's share of in-court destinations. Two-player maps use the same color scale and separate player denominators. Tactical views compare shot shares, group lengths into five-stroke bins, show the shot mix by stroke position or consecutive shot, and group final strokes by type or destination.
+The prototype uses a selected subset of [ShuttleSet](https://github.com/wywyWang/CoachAI-Projects/tree/main/ShuttleSet): **8 men's singles matches**, **22 sets**, **713 replayable rallies**, and **6,961 classified strokes**, recorded between July 2019 and January 2021. Of the classified strokes, **6,726** have destinations within the modeled singles court.
 
-## Interactive features
+Python scripts clean and validate the source CSVs, retain uncertain strokes in their original rally positions, and project recorded camera coordinates onto a common court. The website uses React, TypeScript, Vite, D3, and visx to visualize the processed data. See [Data Sources and Methodology](DATA_SOURCES.md) for sampling decisions, definitions, and calculation details.
 
-Filter by match, player, set or shot type. Switch between density, depth zones and point records. Compare two players, inspect counts and denominators, and step or play through annotated rallies.
+## Selected findings
 
-## Key analytical findings
-
-- Net shots were the most frequent category, with 1,342 of 6,961 classified strokes (19.3%). They made up 272 of 685 second strokes (39.7%) and 288 of 1,470 strokes at positions 8 through 12 (19.6%).
-- Lobs represented 188 of Ginting's 2,077 classified strokes (9.1%) and 203 of Christie's 1,405 (14.4%). They had the largest shot-share gap for this comparison pair.
-- The busiest court cell held 225 of 6,726 in-court destinations (3.3%). Among 118 rallies ending in a classified smash with a known winner, the last hitter won 75 (63.6%). This rate describes recorded endings, including faults.
+- **Net shots** were the most common recorded shot type: **1,342 of 6,961** classified strokes (**19.3%**).
+- **Lobs** accounted for **188 of 2,077** classified strokes by Anthony Sinisuka Ginting (**9.1%**) and **203 of 1,405** by Jonatan Christie (**14.4%**) in this sample. Their opponents and match coverage differ, so this is a descriptive comparison.
+- Across **118** rallies that ended with a classified smash and had a known winner, the last hitter won **75** (**63.6%**). This includes different types of rally endings and is not a causal estimate of smash effectiveness.
 
 ## Practical application
 
-A coach can use the shot mix and sequence charts to shortlist exchanges, check where those shots were recorded, and review selected rallies with a player. For example, the lob share difference gives a coach a concrete pattern to examine against specific opponents before drawing a tactical conclusion.
+A coach can compare shot tendencies, inspect where those shots were directed, and open selected rallies for closer review. For example, the difference in recorded lob usage can guide which rallies to inspect when preparing a player-specific scouting session. Rally Atlas supports informed tactical review; it does not generate validated predictions or automatic coaching decisions.
 
 ## Limitations
 
-The sample includes different opponents and match conditions. Later positions contain only rallies that reached those positions. Shuttle destinations can include interceptions, and the court keeps fixed camera ends. Three retained rallies lack a winner label. The analysis is descriptive. The prototype provides no validated predictions or causal estimates of shot effectiveness.
+This is a selected group of professional matches, not a representative sample of all badminton. Player comparisons can be affected by opponents and match conditions. Replay shows recorded stroke-level positions, not continuous tracking or the real-time flight path of the shuttle. Some annotations and outcomes are incomplete. Spatial destinations can represent interceptions or terminal contacts rather than only where a shot landed. The reported findings are descriptive associations.
 
-## Technology stack
+## Links and attribution
 
-React, TypeScript, Vite, D3, visx and Radix UI. The static build serves local fonts and data. Python verifies the data pipeline, Vitest checks calculations, and Playwright checks browser behavior.
+- **Live prototype:** https://ranaise.github.io/rally-atlas/
+- **Public source code:** https://github.com/ranaise/rally-atlas
+- **Dataset:** [ShuttleSet / CoachAI-Projects](https://github.com/wywyWang/CoachAI-Projects/tree/main/ShuttleSet)
+- **Paper:** [ShuttleSet: A Human-Annotated Stroke-Level Singles Dataset for Badminton Tactical Analysis](https://arxiv.org/abs/2306.04948)
 
-## Prototype and GitHub links
-
-Prototype: https://ranaise.github.io/rally-atlas/
-
-Source code: https://github.com/ranaise/rally-atlas
-
-## Data attribution
-
-ShuttleSet by Wei-Yao Wang, Yung-Chang Huang, Tsi-Ui Ik and Wen-Chih Peng, KDD 2023. The bundled data retains the upstream MIT notice. [Research paper](https://arxiv.org/abs/2306.04948) · [Official dataset and documentation](https://github.com/wywyWang/CoachAI-Projects/blob/main/ShuttleSet/README.md)
-
+ShuttleSet was published by Wei-Yao Wang, Yung-Chang Huang, Tsi-Ui Ik, and Wen-Chih Peng (KDD 2023). Dataset and third-party licenses are retained in the repository.
