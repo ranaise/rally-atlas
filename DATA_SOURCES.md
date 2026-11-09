@@ -19,10 +19,10 @@ All matches are men’s singles. The sample was chosen to cover matches featurin
 | 24 | 2021-01-15 | Yonex Thailand Open, quarter-finals | Anthony Sinisuka Ginting / Rasmus Gemke | 3 | 96 | 1,049 |
 | 26 | 2021-01-15 | Yonex Thailand Open, quarter-finals | Viktor Axelsen / Jonatan Christie | 2 | 56 | 636 |
 | 27 | 2021-01-16 | Yonex Thailand Open, semi-finals | Viktor Axelsen / Anthony Sinisuka Ginting | 3 | 104 | 1,016 |
-| 39 | 2021-01-29 | HSBC BWF World Tour Finals 2020, quarter-finals | Anthony Sinisuka Ginting / Lee Zii Jia | 3 | 102 | 777 |
+| 39 | 2021-01-29 | HSBC BWF World Tour Finals 2020, Group A (round robin) | Anthony Sinisuka Ginting / Lee Zii Jia | 3 | 102 | 777 |
 | | | **Total** | | **22** | **713** | **6,961** |
 
-Dates and event names come from the upstream match metadata. The 2020-branded World Tour Finals match in the sample took place in January 2021.
+Dates and event names come from the upstream match metadata. The 2020-branded World Tour Finals match in the sample took place in January 2021. **Correction:** upstream `match.csv` labels match 39 as a quarter-final. Its January 29 Ginting–Lee fixture was actually a Group A round-robin match, so the preprocessing script corrects the displayed round while preserving the original source CSVs. [Contemporary match report](https://tirto.id/hasil-bwf-world-tour-final-29-jan-2021-klasemen-akhir-tunggal-putra-f9L5).
 
 ## From source rows to rallies
 
