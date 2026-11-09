@@ -18,6 +18,8 @@ OUT = ROOT / "public" / "data"
 REVISION = "45517f7d4cb936b03f3eabf939cc7959d39226fe"
 SOURCE = f"https://raw.githubusercontent.com/wywyWang/CoachAI-Projects/{REVISION}"
 MATCH_IDS = (11, 14, 15, 16, 24, 26, 27, 39)
+# Match 39 is a Group A fixture. The upstream match.csv labels it as a quarter-final.
+ROUND_CORRECTIONS = {39: "Group A (round robin)"}
 NAMES = {
     "CHOU Tien Chen": "Chou Tien Chen",
     "Jonatan CHRISTIE": "Jonatan Christie",
@@ -180,7 +182,7 @@ def build(refresh):
         when = date(*(int(row[k]) for k in ("year", "month", "day"))).isoformat()
         matches.append({
             "id": int(key), "date": when, "event": row["tournament"],
-            "round": row["round"], "players": [NAMES[row["winner"]], NAMES[row["loser"]]],
+            "round": ROUND_CORRECTIONS.get(int(key), row["round"]), "players": [NAMES[row["winner"]], NAMES[row["loser"]]],
             "sets": sets,
         })
     manifest = {
