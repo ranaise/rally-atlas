@@ -2,7 +2,7 @@
 
 Interactive badminton analytics using the [ShuttleSet](https://github.com/wywyWang/CoachAI-Projects/tree/main/ShuttleSet) dataset. Built as a group project for a Data Visualization course at Telkom University and AQX Sports Analytics Data Bowl 4.0.
 
-**[View the website](https://ranaise.github.io/rally-atlas/)** | [Source code](https://github.com/ranaise/rally-atlas)
+**[Live Demo](https://ranaise.github.io/rally-atlas/)**
 
 ![Court heatmap](docs/screenshots/shot-placement.png)
 
