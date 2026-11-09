@@ -49,6 +49,8 @@ function Methodology({ data, rallies, shots }: { data: Dataset; rallies: number;
         <p>Rallies are identified by match, set and rally number. Rally winners come from ShuttleSet’s rally outcome label. We excluded {data.quality.all_flagged_rallies} fully flagged rallies and left {data.quality.unknown_winner_rallies} outcomes unknown. Replay preserves {data.quality.flagged_or_unclassified_slots} uncertain stroke slots. Shot analyses use classified strokes.</p>
         <h3>Scope and source</h3>
         <p>These results describe a selected sample. Player comparisons may reflect different opponents and match conditions. Data from Wang, Huang, Ik and Peng, ShuttleSet (KDD 2023).</p>
+        <h3>Project team</h3>
+        <p>Farha Amirah Hasibuan · Azzahra Indah · Rafa'na'ilah Septia · Tisee Tisee · Kayla Ulfiyah Haurani</p>
         <div className="source-links"><a href={upstream}>Dataset</a><a href="https://arxiv.org/abs/2306.04948">Research paper</a><a href={`${import.meta.env.BASE_URL}data/SHUTTLESET-LICENSE.txt`}>Data license</a></div>
       </div>
     </div>
